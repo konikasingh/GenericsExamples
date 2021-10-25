@@ -7,11 +7,11 @@ namespace GenericsExample
         static void Main(string[] args)
         {
             GenericMaxNumber<int> simple = new GenericMaxNumber<int>(25, 34, 32);
-            simple.findMax();
+            simple.findMax1();
             GenericMaxNumber<float> simple1 = new GenericMaxNumber<float>(25.20f, 25.33f, 25.12f);
-            simple1.findMax();
-            GenericMaxNumber<string> simple2 = new GenericMaxNumber<string>("abc", "red", "wsx");
-            simple2.findMax();
+            simple1.findMax1();
+            GenericMaxNumber<string> simple2 = new GenericMaxNumber<string>("abc", "abb", "aaa");
+            simple2.findMax1();
             Console.ReadLine();
 
             /*Console.WriteLine("Enter the First number:");
@@ -20,9 +20,6 @@ namespace GenericsExample
             int s = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the third number:");
             int t = Convert.ToInt32(Console.ReadLine());*/
-
-
-
         }
     }
 }

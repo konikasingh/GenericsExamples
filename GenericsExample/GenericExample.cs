@@ -16,7 +16,7 @@ namespace GenericsExample
             this.second = second;
             this.third = third;
         }
-        public void findMax()
+        public void findMax1()
         {
 
             //here checking the greater number among three using compareTo() method
@@ -40,3 +40,4 @@ namespace GenericsExample
         }
     }
 }
+
