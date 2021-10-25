@@ -8,14 +8,14 @@ namespace GenericsExample
 {
     class SimpleClass
     {
-        public float first, second, third;
+        public string first, second, third;
         /// <summary>
         /// Initializes a new instance of the <see cref="SimpleClass"/> class.
         /// </summary>
         /// <param name="first">The first.</param>
         /// <param name="second">The second.</param>
         /// <param name="third">The third.</param>
-        public SimpleClass(float first, float second, float third)
+        public SimpleClass(string first, string second, string third)
         {
             this.first = first;
             this.second = second;
