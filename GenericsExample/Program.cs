@@ -6,16 +6,13 @@ namespace GenericsExample
     {
         static void Main(string[] args)
         {
-            int[] arr = { 342, 654, 111, 897, 125 };
-
-            GenericMaxNumber<int> simple = new GenericMaxNumber<int>(arr);
-            simple.printMaxValue();
-
-            /*GenericMaxNumber<float> simple1 = new GenericMaxNumber<float>(25.20f, 25.33f, 25.12f);
-           simple1.findMax1();
-           GenericMaxNumber<string> simple2 = new GenericMaxNumber<string>("abc", "red", "wsx");
-           simple.findMax1();
-           Console.ReadLine();*/
+            GenericMaxNumber<int> simple = new GenericMaxNumber<int>(25, 34, 32);
+            simple.findMax();
+            GenericMaxNumber<float> simple1 = new GenericMaxNumber<float>(25.20f, 25.33f, 25.12f);
+            simple1.findMax();
+            GenericMaxNumber<string> simple2 = new GenericMaxNumber<string>("abc", "red", "wsx");
+            simple2.findMax();
+            Console.ReadLine();
 
             /*Console.WriteLine("Enter the First number:");
             int f = Convert.ToInt32(Console.ReadLine());
@@ -23,6 +20,7 @@ namespace GenericsExample
             int s = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the third number:");
             int t = Convert.ToInt32(Console.ReadLine());*/
+
 
 
         }

@@ -8,38 +8,35 @@ namespace GenericsExample
 {
     class GenericMaxNumber<T> where T : IComparable
     {
-        /// <summary>
-        /// finding max value in array and sorting them using sort function
-        /// </summary>
-        public T[] Value;
+        public T first, second, third;
 
-        public GenericMaxNumber(T[] value)
+        public GenericMaxNumber(T first, T second, T third)
         {
-            this.Value = value;
+            this.first = first;
+            this.second = second;
+            this.third = third;
         }
-        public T[] Sort1(T[] values)
+        public void findMax()
         {
-            Array.Sort(values);
-            Console.WriteLine("the sorted array is :");
-            foreach (var i in values)
+
+            //here checking the greater number among three using compareTo() method
+
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("the {0} is greater", first);//if first is greater 
             }
-            return values;
-        }
-        public T maxValue(params T[] values)
-        {
-
-            var sorted_values = Sort1(values);
-            return sorted_values[^1];
-
-        }
-
-        public void printMaxValue()
-        {
-            var max = maxValue(this.Value);
-            Console.WriteLine("Maximum value is:" + max);
-
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            {
+                Console.WriteLine("the {0} is greater", second);//if second is greater
+            }
+            else if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
+            {
+                Console.WriteLine("the {0} is greater", third);//if third is greater
+            }
+            else
+            {
+                Console.WriteLine("numbers are equal");//else all number are equal
+            }
         }
     }
 }
