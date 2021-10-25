@@ -8,14 +8,14 @@ namespace GenericsExample
 {
     class SimpleClass
     {
-        public int first, second, third;
+        public float first, second, third;
         /// <summary>
         /// Initializes a new instance of the <see cref="SimpleClass"/> class.
         /// </summary>
         /// <param name="first">The first.</param>
         /// <param name="second">The second.</param>
         /// <param name="third">The third.</param>
-        public SimpleClass(int first, int second, int third)
+        public SimpleClass(float first, float second, float third)
         {
             this.first = first;
             this.second = second;
@@ -43,7 +43,6 @@ namespace GenericsExample
             {
                 Console.WriteLine("numbers are equal");//else all number are equal
             }
-
         }
     }
 }
